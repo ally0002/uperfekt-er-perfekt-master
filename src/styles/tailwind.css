@@ -61,6 +61,17 @@
 }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@layer base{
+/* Add your custom styles here */
+.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+}
+
 
 .color-change-2x {
 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
