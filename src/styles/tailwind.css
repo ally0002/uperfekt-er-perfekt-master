@@ -98,3 +98,14 @@
     color: #59fadf;
   }
 }
+
+  @theme {
+		/*Infinite scroll animation*/
+		--animate-infinite-scroll: infinite-scroll 45s linear infinite;  
+
+		@keyframes infinite-scroll {    
+		from { transform: translateX(0);}    
+		to { transform: translateX(-100%);}  
+		}
+	}
+	
