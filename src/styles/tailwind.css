@@ -96,10 +96,10 @@
 
 @keyframes color-change-2x {
   0% {
-    color: #ee1589;
+    color: #76204e;
   }
   100% {
-    color: #59fadf;
+    color: #3b8679;
   }
 }
 
@@ -199,4 +199,5 @@
             transform: rotate(2deg);
   }
 }
+
 
