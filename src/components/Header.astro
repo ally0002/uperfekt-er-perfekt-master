@@ -28,7 +28,7 @@ import Link from "../components/Link.astro";
     </button>
   </header>
   <nav id="mobilmenu" class="flex flex-col content-center pt-4" x-show="showmenu" x-transition x-on:click.outside="showmenu = false">
-    <ul class="text-center font-bold bg-white pb-10 space-y-4 color-change-2x">
+    <ul class="text-center font-bold bg-[#7cbcc6] pb-10 space-y-4 color-change-2x">
       <li class="animate-pulse"><Link href="#hvaderstockfotos">HVAD ER STOCK-FOTOS?</Link></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
       <li class="animate-pulse"><Link href="#pierresberømmelse">PIERRES BERØMMELSE</Link></li>
       <li class="animate-pulse"><Link href="#fotoeksperimenter">FOTOEKSPERIMENTER</Link></li>
@@ -36,5 +36,3 @@ import Link from "../components/Link.astro";
     </ul>
   </nav>
 </div>
-
-
