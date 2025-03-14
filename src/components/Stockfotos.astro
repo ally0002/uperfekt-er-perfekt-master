@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import apoteket from "../assets/images/apoteket.jpg";
+import arbejde from "../assets/images/arbejde.jpg";
+import glitch from "../assets/images/glitch.jpg";
+import godtarbejde from "../assets/images/godt-arbejde.jpg";
+import lidtifem from "../assets/images/lidtifem-pierre-falcke.jpg";
+import smena from "../assets/images/lomo-smena-17.jpg";
+import overouticm from "../assets/images/over-out-icm.jpeg";
+import pierre from "../assets/images/pierre.jpeg";
+import tyndfilm from "../assets/images/tynd-film.jpg";
+---
+
+<div class=" inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.2)_1px,transparent_1px)] bg-[size:550px_550px] pointer-events-none">
+  <section class="max-w-4xl mx-auto my-32 prose border-black p-8" id="hvaderstockfotos">
+    <section class="whitespace-nowrap overflow-x-hidden bg-[#ee1589] text-white py-4">
+      <div class="inline-block animate-infinite-scroll whitespace-nowrap [&_span]:mx-6">
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+        <span class="bangers-regular">HVAD ER STOCK FOTOS?</span>
+      </div>
+      <div class="inline-block animate-infinite-scroll whitespace-nowrap [&_span]:mx-6" aria-hidden="true">
+        <span>UI Lir</span>
+        <span>Fede effekter</span>
+        <span>Flotte animationer</span>
+        <span>Høje lyde</span>
+        <span>Livlige og levende webløsninger</span>
+        <span>UI & UX</span>
+        <span>Interaktioner</span>
+        <span>Mikroanimationer</span>
+        <span>Mega fedt!</span>
+        <span>Dit site bliver bedre!</span>
+      </div>
+    </section>
+
+    <div class="grid grid-cols-3 gap-4">
+      <div>
+        <p class="bangers-regular">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</p>
+        <Image src={arbejde} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
+      </div>
+      <div>
+        <p class="bangers-regular">Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</p>
+        <Image src={apoteket} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
+      </div>
+      <div>
+        <p class="bangers-regular">Stock-fotos har eksisteret i mange år. Før branchen blev digital, tilbød stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.</p>
+        <Image src={godtarbejde} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
+      </div>
+    </div>
+  </section>
+</div>

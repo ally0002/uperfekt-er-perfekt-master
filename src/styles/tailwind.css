@@ -6,6 +6,10 @@
 
 @theme {
   /* Her tilføjes theme variable // tokens */
+  
+    /*custom cursor*/
+    --handcursor: url(/cursor.svg) 25 25, pointer;
+	
 }
 
 @layer base {

@@ -14,10 +14,11 @@ import pierre from "../assets/images/pierre.jpeg";
 import tyndfilm from "../assets/images/tynd-film.jpg";
 import "../styles/tobii.min.css";
 import "../styles/tailwind.css";
+import Stockfotos from "../components/Stockfotos.astro";
 ---
 
 <div class="progress-bar h-4 fixed w-full bg-gradient-to-r from-pink-500 to-yellow-300 left-0 origin-top-left top-0 right-0"></div>
-<h1>hej</h1>
+
 <MainLayout title="Titel">
   <article class="p-4 md:p-0">
     <section class="max-w-4xl mx-auto mt-32 flex flex-col md:flex-row items-center" id="hero">
@@ -34,7 +35,7 @@ import "../styles/tailwind.css";
       <div class="overflow-auto md:w-1/2">
         <a href="pierre.jpeg" class="lightbox border-[#7adaeb] border-2">
           <Image src={pierre} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
-          <figcaption class="text-center reenie-beanie-regular">Pierre Falcke, selvportræt</figcaption>
+          <figcaption class="text-center reenie-beanie-regular text-xl">Pierre Falcke, selvportræt</figcaption>
         </a>
       </div>
       <p class="text-xl animate-fade-in md:w-1/2 md:mr-8 reenie-beanie-regular">Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde.</p>
@@ -90,15 +91,15 @@ import "../styles/tailwind.css";
 
       <div class="grid grid-cols-3 gap-4">
         <div>
-          <p>Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</p>
+          <p class="bangers-regular">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</p>
           <Image src={arbejde} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
         </div>
         <div>
-          <p>Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</p>
+          <p class="bangers-regular">Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</p>
           <Image src={apoteket} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
         </div>
         <div>
-          <p>Stock-fotos har eksisteret i mange år. Før branchen blev digital, tilbød stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.</p>
+          <p class="bangers-regular">Stock-fotos har eksisteret i mange år. Før branchen blev digital, tilbød stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.</p>
           <Image src={godtarbejde} alt="" class="not-prose rounded-full border-3 border-[#ee1589] shake-br" />
         </div>
       </div>
@@ -147,25 +148,25 @@ import "../styles/tailwind.css";
         <div>
           <a href="glitch.jpg" class="lightbox">
             <Image src={glitch} alt="" class="not-prose shake-br rounded-full border-3 border-[#ee1589]" />
-            <figcaption>Glitch kunst</figcaption>
+            <figcaption class="text-center reenie-beanie-regular bg-[#eaf4f45b] text-3xl text-black font-bold">Glitch kunst</figcaption>
           </a>
         </div>
         <div>
           <a href="lomo-smena-17.jpg" class="lightbox">
             <Image src={smena} alt="" class="not-prose shake-br rounded-full border-3 border-[#ee1589]" />
-            <figcaption>Dobbelteksponering med Smena</figcaption>
+            <figcaption class="text-center reenie-beanie-regular bg-[#eaf4f45b] text-black text-3xl">Dobbelteksponering med Smena</figcaption>
           </a>
         </div>
       </div>
     </div>
   </article>
   <div class="max-w-xl mx-auto prose">
-    <p class="bangers-regular">Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</p>
+    <p class="bangers-regular pt-25">Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</p>
   </div>
   <article id="fotoeksperimenter">
-    <section class="max-w-4xl mx-auto my-32 prose border border-double border-black p-8" id="fotoeksperimenter">
-      <section class="whitespace-nowrap overflow-x-hidden bg-[#ee1589] text-white py-4">
-        <div class="inline-block animate-infinite-scroll whitespace-nowrap [&_span]:mx-6">
+    <section class="max-w-4xl mx-auto my-32 prose border-black p-8" id="fotoeksperimenter">
+      <section class="whitespace-nowrap text-[#ee1589] py-4 text-2xl">
+        <div class="inline-block animate-infinite-scroll whitespace-nowrap [&_span]:mx-14">
           <span class="bangers-regular">FOTOEKSPERIMENTER</span>
           <span class="bangers-regular">FOTOEKSPERIMENTER</span>
           <span class="bangers-regular">FOTOEKSPERIMENTER</span>
@@ -193,17 +194,17 @@ import "../styles/tailwind.css";
 
       <div class="grid grid-cols-3 gap-4">
         <div>
-          <h3 class="text-xl bangers-regular color-change-2x">Analog fotografering</h3>
+          <h3 class="text-lg bangers-regular color-change-2x">ANALOG FOTOGRAFERING</h3>
           <p class="bangers-regular">Fotografering med gode, gammeldags filmruller. Analog fotografering stiger for tiden i popularitet, specielt blandt unge, og prisen på filmruller og vintage-kameraer skyder i vejret. Mange fotografer synes at film-fotografering er mere ægte har mere “sjæl.” Analog fotografering er langsommmere, hvert enkelt billede koster penge, og man bliver nødt til at overveje motiv og lys grundigere før der skydes - tænk før du trykker.</p>
           <p class="bangers-regular">Analog fotografering kan gå galt mange steder i processen, og det giver også mulighed for at eksperimentere med “det uperfekte og uforudsigelige i processen.” Man kan f.eks. skyde på for gamle filmruller, arbejde med forskellige teknikker som “lens whacking” og filtre/ting foran objektivet, og man kan pille ved de kemiske processer under fremkaldelse af filmen.</p>
         </div>
         <div>
-          <h3 class="text-xl bangers-regular color-change-2x">Glitch art</h3>
+          <h3 class="text-lg bangers-regular color-change-2x">GLITCH ART</h3>
           <p class="bangers-regular">Når der sker en teknisk fejl i et medie/en kommunikationskanal kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at skabe kunst. En meget typisk glitch er små analoge eller digitale fejl i farvegengivelsen af billeder.</p>
           <p></p>
         </div>
         <div>
-          <h3 class="text-xl bangers-regular color-change-2x">Lomografi</h3>
+          <h3 class="text-lg bangers-regular color-change-2x">LOMOGRAFI</h3>
           <p class="bangers-regular">Et lomografi er egentlig bare et fotografi skudt uden videre omtanke, og med noget foto-udstyr af ret alternativ kvalitet. Lomografier skydes ofte på gode, gammeldags filmruller, men kan også skyde digitalt.</p>
           <p class="bangers-regular">Det kan måske lyde lidt anti-fotograf-agtigt. Men en del foto-entusiaster dyrker den slags, og ser det som en foto-genre eller endda en livsstil.</p>
         </div>
@@ -214,19 +215,19 @@ import "../styles/tailwind.css";
     <section id="nybegyndelse">
       <div class="max-w-xl mx-auto my-32 prose">
         <h2 class="text-4xl bangers-regular color-change-2x">EN NY BEGYNDELSE</h2>
-        <p>Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig stolt af sit arbejde. Som Pierre selv udtrykker det: <span class="italic">“Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt.”</span></p>
+        <p class="bangers-regular">Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig stolt af sit arbejde. Som Pierre selv udtrykker det: <span class="italic">“Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt.”</span></p>
       </div>
       <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto my-8 items-center prose">
         <div>
           <a href="over-out-icm.jpeg" class="lightbox">
             <Image src={overouticm} alt="" class="not-prose shake-br rounded-full border-3 border-[#ee1589]" />
-            <figcaption>Overeksponeret og ude af fokus</figcaption>
+            <figcaption class="text-center reenie-beanie-regular text-xl">Overeksponeret og ude af fokus</figcaption>
           </a>
         </div>
         <div>
           <a href="tynd-film.jpg" class="lightbox">
             <Image src={tyndfilm} alt="" class="not-prose shake-br rounded-full border-3 border-[#ee1589]" />
-            <figcaption>Tynd film</figcaption>
+            <figcaption class="text-center reenie-beanie-regular text-xl">Tynd film</figcaption>
           </a>
         </div>
       </div>
@@ -236,12 +237,27 @@ import "../styles/tailwind.css";
         <div>
           <a href="lidtifem-pierre-falcke.jpg" class="lightbox" alt="">
             <Image src={lidtifem} alt="" class="not-prose animate__flipOutX shake-br rounded-full border-3 border-[#ee1589]" />
-            <figcaption>Lidt i fem - ny bog af Pierre Falcke</figcaption>
+            <figcaption class="text-center reenie-beanie-regular text-xl">Lidt i fem - ny bog af Pierre Falcke</figcaption>
           </a>
         </div>
       </div>
     </section>
   </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </MainLayout>
 
 <div class="owerflow-auto w-100 h-400 absolute top-70 left-140 z-0" style="clip-path: url(#uundulate-clip);">
@@ -379,3 +395,5 @@ import "../styles/tailwind.css";
 <script defer>
   const tobii = new Tobii();
 </script>
+
+
